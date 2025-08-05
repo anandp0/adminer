@@ -11,13 +11,13 @@ build:
     image_template: adminer-4.8
 
 deploy:
-    context: alpha/DEV
+    context: anandp0/DEV
     replicas: 1
     port:
     - 8080
   
 properties:
-    revision : 27
+    revision : 2
     MFA_PROVIDER : GA
     AUTHSECRET: 
         vault : ADMINER_AUTHSECRET
